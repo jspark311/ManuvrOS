@@ -155,7 +155,7 @@ ManuvrXport::~ManuvrXport() {
   #if defined(__MANUVR_LINUX) | defined(__MANUVR_FREERTOS)
     if (_thread_id > 0) {
       _thread_id = 0;
-      pthread_cancel(_thread_id);
+      pthread_cancel((pthread_t)(_thread_id));
     }
     listening(false);
   #endif

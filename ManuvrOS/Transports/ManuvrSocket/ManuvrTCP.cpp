@@ -278,7 +278,7 @@ int8_t ManuvrTCP::listen() {
   _sock = socket(AF_INET, SOCK_STREAM, 0);        // Open the socket...
 
   /* Bind the server socket */
-  if (bind(_sock, (struct sockaddr *) &_sockaddr, sizeof(_sockaddr))) {
+  if (::bind(_sock, (struct sockaddr *) &_sockaddr, sizeof(_sockaddr))) {
     Kernel::log("Failed to bind the server socket.\n");
     return -1;
   }

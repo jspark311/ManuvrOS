@@ -39,9 +39,9 @@ This file is meant to contain a set of common functions that are
 #include <Platform/Linux/LinuxStorage.h>
 #endif
 
-#if defined(__MACH__) && defined(__APPLE__)
-typedef unsigned long pthread_t;
-#endif
+//#if defined(__MACH__) && defined(__APPLE__)
+//typedef unsigned long pthread_t;
+//#endif
 
 
 /* Used to build an Argument chain from parameters passed to main(). */

@@ -280,7 +280,7 @@ ManuvrOIC::~ManuvrOIC() {
     #if defined(__MACH__) && defined(__APPLE__)
       if (_thread_id > 0) {
         _thread_id = 0;
-        pthread_cancel(_thread_id);
+        pthread_cancel((pthread_t)(_thread_id));
       }
     #else
     if (_thread_id > 0) {
