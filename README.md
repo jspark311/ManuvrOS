@@ -1,7 +1,10 @@
 /* \mainpage ManuvrOS Documentation
 
 # NOTE This repo is an unmaintained fork.
+
 It is being retained here for historical purposes. Please refer to the [maintained version of this package](https://github.com/Manuvr/ManuvrOS).
+
+-----------------
 
 A cross-platform real-time, event-driven "Operating System" for asynchronous applications. It was intended to make it easier to write asynchronous, cross-platform IoT applications. Despite the name, ManuvrOS was intended to abstract threading and platform-related differences, and can be used on top of another operating system (as is the case on linux).
 
